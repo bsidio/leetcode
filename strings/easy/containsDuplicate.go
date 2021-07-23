@@ -13,6 +13,7 @@ func containsDuplicate(nums []int) bool {
 	var l = make(map[int]int)
 	for i := 0; i < len(nums); i++ {
 		l[nums[i]] = i
+		//
 	}
 	if len(nums) > len(l) {
 		fmt.Println("true")

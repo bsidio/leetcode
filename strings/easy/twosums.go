@@ -3,16 +3,16 @@ package main
 import "fmt"
 
 func main() {
-	nums := []int{1, 4, 5, 4}
-	target := 9
+	nums := []int{1, -4, 5, -5, 4}
+	target := 0
 
-	twoSums(nums, target)
+	fmt.Println(twoSums(nums, target))
 }
 
 func twoSums(nums []int, target int) []int {
 	//create a map to store the element of nums as key and their index as value
 	result := make(map[int]int)
-
+	//result["val"] :=make(map[int]int)
 	//loop through the array nums
 	for idx, v := range nums {
 		//sub target-v to get remainder
